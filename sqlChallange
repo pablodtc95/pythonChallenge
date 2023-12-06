@@ -1,0 +1,12 @@
+select 
+    email 
+from 
+    public.email_table as email 
+left join 
+    public.data_table as data 
+on 
+    email.join_id = data.join_id
+where
+    data.column_1 % 2 = 0 and
+    data.column_2 < data.column_1 and
+    RIGHT(data.column_3,1) = 1
