@@ -1,0 +1,15 @@
+from random import randrange
+
+def funRandom():
+    while True:
+        a = randrange(1, 9)
+        b = randrange(1, 9)
+        c = a * b
+        print('a = '+str(a)+' c = '+str(c))
+        
+        if (c == 4):
+            print('Success!')
+            print('a = '+str(a)+' b = '+str(b))
+            break
+        
+funRandom()
